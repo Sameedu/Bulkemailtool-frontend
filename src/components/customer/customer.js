@@ -19,7 +19,7 @@ function DashboardCustomer() {
     if(decodedToken.exp * 1000 < Date.now() ){
         navigate('/login');
     } else {
-        var response = await axios.get('http://localhost:3002/customer/get', {
+        var response = await axios.get('https://bulkemailtool-backend.herokuapp.com/customer/get', {
             headers: {
                 "token": token
             }
@@ -37,7 +37,7 @@ getdata()
     if(decodedToken.exp * 1000 < Date.now() ){
         navigate('/');
     } else {
-        await axios.delete('http://localhost:3002/customer/delete/${id}', {
+        await axios.delete('https://bulkemailtool-backend.herokuapp.com/customer/delete/${id}', {
             headers: {
                 "token": token
             }

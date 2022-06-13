@@ -24,7 +24,7 @@ useEffect(()=>{ async function ViewEmailGroupMembers(groupid){
       if(decodedToken.exp * 1000 < Date.now() ){
           navigate('/login');
       } else {
-          var response = await axios.get('http://localhost:3002/group/listemailgroupmembers/' + groupid, {
+          var response = await axios.get('https://bulkemailtool-backend.herokuapp.com/group/listemailgroupmembers/' + groupid, {
               headers: {
                   "token": token
               }

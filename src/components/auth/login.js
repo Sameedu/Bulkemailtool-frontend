@@ -12,7 +12,7 @@ function Login () {
   const onSubmit = async (e) => {
     e.preventDefault()
     try{
-        var response = await axios.post('http://localhost:3002/register/signin', {
+        var response = await axios.post('https://bulkemailtool-backend.herokuapp.com/register/signin', {
             email: email,
             password: password,
         })

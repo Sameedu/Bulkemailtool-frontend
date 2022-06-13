@@ -32,7 +32,7 @@ function AddCustomer() {
               navigate('/login');
           } else {
             var response = await axios.post(
-              'http://localhost:3002/customer/create',
+              'https://bulkemailtool-backend.herokuapp.com/customer/create',
               {
                 cust_name : rename.cust_name,
                 cust_email : rename.cust_email,

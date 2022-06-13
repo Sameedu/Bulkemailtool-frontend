@@ -24,7 +24,7 @@ function ListingMailIds() {
               if(decodedToken.exp * 1000 < Date.now() ){
                   navigate('/login');
               } else {
-                  var response = await axios.get('http://localhost:3002/group/listmailgroup', {
+                  var response = await axios.get('https://bulkemailtool-backend.herokuapp.com/group/listmailgroup', {
                       headers: {
                           "token": token
                       }
@@ -44,7 +44,7 @@ function ListingMailIds() {
         //       if(decodedToken.exp * 1000 < Date.now() ){
         //           navigate('/login');
         //       } else {
-        //           var response = await axios.get('http://localhost:3002/customer/listemailids', {
+        //           var response = await axios.get('https://bulkemailtool-backend.herokuapp.com/customer/listemailids', {
         //               headers: {
         //                   "token": token
         //               }

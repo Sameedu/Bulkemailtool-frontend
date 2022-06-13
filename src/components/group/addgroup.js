@@ -30,7 +30,7 @@ function AddGroup() {
               navigate('/login');
           } else {
             var response = await axios.post(
-              'http://localhost:3002/group/createmailgroup',
+              'https://bulkemailtool-backend.herokuapp.com/group/createmailgroup',
               {
                 mgroup_name : rename.mgroup_name,
                 mgroup_description : rename.mgroup_description,

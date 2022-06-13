@@ -24,7 +24,7 @@ function DashboardEmail() {
     }
     try {
       setLoading(true);
-      const { data } = await axios.post(`http://localhost:3002/emailer/email`, {
+      const { data } = await axios.post(`https://bulkemailtool-backend.herokuapp.com/emailer/email`, {
         email,
         subject,
         message,

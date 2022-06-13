@@ -23,7 +23,7 @@ function EditGroup() {
     } else {
       console.log(id)
       var response = await axios.put(
-      `http://localhost:3002/group/update/${id}`, 
+      `https://bulkemailtool-backend.herokuapp.com/group/update/${id}`, 
       {
         group_list : rename.group_list,
         group_description : rename.group_description

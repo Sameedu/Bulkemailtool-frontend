@@ -24,7 +24,7 @@ function EditCustomer() {
     } else {
       console.log(id)
       var response = await axios.put(
-      `http://localhost:3002/customer/update/${id}`, 
+      `https://bulkemailtool-backend.herokuapp.com/customer/update/${id}`, 
       {
         cust_email : rename.cust_email,
         cust_address : rename.cust_address,

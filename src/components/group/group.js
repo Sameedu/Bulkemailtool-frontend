@@ -20,7 +20,7 @@ function ListMailGroup() {
         if(decodedToken.exp * 1000 < Date.now() ){
             navigate('/login');
         } else {
-            var response = await axios.get('http://localhost:3002/group/listmailgroup', {
+            var response = await axios.get('https://bulkemailtool-backend.herokuapp.com/group/listmailgroup', {
                 headers: {
                     "token": token
                 }
@@ -38,7 +38,7 @@ getdata()
     if(decodedToken.exp * 1000 < Date.now() ){
         navigate('/login');
     } else {
-        await axios.delete('http://localhost:3002/group/delete/${id}', {
+        await axios.delete('https://bulkemailtool-backend.herokuapp.com/group/delete/${id}', {
             headers: {
                 "token": token
             }

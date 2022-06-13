@@ -15,7 +15,7 @@ function ProductComponent() {
         if(decodedToken.exp * 1000 < Date.now() ){
             navigate('/');
         } else {
-            var response = await axios.get('http://localhost:3002/product/get', {
+            var response = await axios.get('https://bulkemailtool-backend.herokuapp.com/product/get', {
                 headers: {
                     "access-token": token
                 }
@@ -31,7 +31,7 @@ function ProductComponent() {
         if(decodedToken.exp * 1000 < Date.now() ){
             navigate('/');
         } else {
-            var response = await axios.put(`http://localhost:3002/product/update/${id}`, {
+            var response = await axios.put(`https://bulkemailtool-backend.herokuapp.com/product/update/${id}`, {
                 userQuantity: userQuantity
             }, {
                 headers: {

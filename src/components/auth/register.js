@@ -39,7 +39,7 @@ function Register () {
   
   const handleSubmit = async (e) => {
     try{
-      var response = await axios.post('http://localhost:3002/register/signup', {
+      var response = await axios.post('https://bulkemailtool-backend.herokuapp.com/register/signup', {
           name: e.uname,
           email: e.email,
           password: e.password,
