@@ -1,3 +1,6 @@
+   
+Front-end Deployed URL is https://funny-gumdrop-dfc15a.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
